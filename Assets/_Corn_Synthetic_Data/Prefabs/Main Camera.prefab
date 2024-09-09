@@ -13,8 +13,6 @@ GameObject:
   - component: {fileID: 2043949762055114887}
   - component: {fileID: 9053365164349070307}
   - component: {fileID: 2139980293760807221}
-  - component: {fileID: 4279594412664993296}
-  - component: {fileID: 6792292372768343762}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -69,10 +67,10 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.01
-  far clip plane: 19.95
+  far clip plane: 25.32
   field of view: 0.8
   orthographic: 1
-  orthographic size: 0.1
+  orthographic size: 2.2
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -240,10 +238,7 @@ MonoBehaviour:
   m_CameraSensor:
     rid: 3190566294395027456
   m_Labelers:
-  - rid: 3190566294395027457
-  - rid: 3190566316407521280
-  - rid: 3190566316407521285
-  - rid: 5580835869302194204
+  - rid: 760542174960156686
   m_LayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -262,12 +257,7 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 3190566294395027456
-      type: {class: UnityCameraSensor, ns: UnityEngine.Perception.GroundTruth.Sensors,
-        asm: Unity.Perception.Runtime}
-      data:
-        superSamplingFactor: 8
-    - rid: 3190566294395027457
+    - rid: 760542174960156686
       type: {class: BoundingBox2DLabeler, ns: UnityEngine.Perception.GroundTruth.Labelers,
         asm: Unity.Perception.Runtime}
       data:
@@ -275,174 +265,8 @@ MonoBehaviour:
         annotationId: bounding box
         idLabelConfig: {fileID: 11400000, guid: 835ae59c7985f2e4692f85b10b925f28,
           type: 2}
-    - rid: 3190566316407521280
-      type: {class: RenderedObjectInfoLabeler, ns: UnityEngine.Perception.GroundTruth.Labelers,
+    - rid: 3190566294395027456
+      type: {class: UnityCameraSensor, ns: UnityEngine.Perception.GroundTruth.Sensors,
         asm: Unity.Perception.Runtime}
       data:
-        enabled: 1
-        objectInfoMetricId: RenderedObjectInfo
-        idLabelConfig: {fileID: 11400000, guid: 835ae59c7985f2e4692f85b10b925f28,
-          type: 2}
-    - rid: 3190566316407521285
-      type: {class: MetadataReporterLabeler, ns: UnityEngine.Perception.GroundTruth.Labelers,
-        asm: Unity.Perception.Runtime}
-      data:
-        enabled: 1
-        annotationId: metadata
-    - rid: 5580835869302194204
-      type: {class: DepthLabeler, ns: UnityEngine.Perception.GroundTruth.Labelers,
-        asm: Unity.Perception.Runtime}
-      data:
-        enabled: 1
-        annotationId: Depth
-        measurementStrategy: 0
---- !u!114 &4279594412664993296
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7454166816233994303}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d7961d14205cb64bb3687632c233c44, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shouldRandomizePosition: 1
-  positionMode: 1
-  position:
-    collapsed: 0
-    x:
-      rid: 3812102687799115779
-    y:
-      rid: 3812102529869676556
-    z:
-      rid: 3812102529869676546
-  shouldRandomizeRotation: 0
-  rotationMode: 1
-  rotation:
-    collapsed: 0
-    x:
-      rid: 3812102529869676547
-    y:
-      rid: 3812102529869676548
-    z:
-      rid: 3812102529869676549
-  shouldRandomizeScale: 0
-  scaleMode: 1
-  scale:
-    collapsed: 0
-    x:
-      rid: 3812102529869676550
-    y:
-      rid: 3812102529869676551
-    z:
-      rid: 3812102529869676552
-  useUniformScale: 0
-  uniformScale:
-    collapsed: 0
-    value:
-      rid: 3812102529869676553
-  references:
-    version: 2
-    RefIds:
-    - rid: 3812102529869676546
-      type: {class: ConstantSampler, ns: UnityEngine.Perception.Randomization.Samplers,
-        asm: Unity.Perception.Runtime}
-      data:
-        value: -23
-        <minAllowed>k__BackingField: 0
-        <maxAllowed>k__BackingField: 0
-        <shouldCheckValidRange>k__BackingField: 0
-    - rid: 3812102529869676547
-      type: {class: ConstantSampler, ns: UnityEngine.Perception.Randomization.Samplers,
-        asm: Unity.Perception.Runtime}
-      data:
-        value: 0
-        <minAllowed>k__BackingField: 0
-        <maxAllowed>k__BackingField: 0
-        <shouldCheckValidRange>k__BackingField: 0
-    - rid: 3812102529869676548
-      type: {class: ConstantSampler, ns: UnityEngine.Perception.Randomization.Samplers,
-        asm: Unity.Perception.Runtime}
-      data:
-        value: 0
-        <minAllowed>k__BackingField: 0
-        <maxAllowed>k__BackingField: 0
-        <shouldCheckValidRange>k__BackingField: 0
-    - rid: 3812102529869676549
-      type: {class: ConstantSampler, ns: UnityEngine.Perception.Randomization.Samplers,
-        asm: Unity.Perception.Runtime}
-      data:
-        value: 0
-        <minAllowed>k__BackingField: 0
-        <maxAllowed>k__BackingField: 0
-        <shouldCheckValidRange>k__BackingField: 0
-    - rid: 3812102529869676550
-      type: {class: ConstantSampler, ns: UnityEngine.Perception.Randomization.Samplers,
-        asm: Unity.Perception.Runtime}
-      data:
-        value: 1
-        <minAllowed>k__BackingField: 0
-        <maxAllowed>k__BackingField: 0
-        <shouldCheckValidRange>k__BackingField: 0
-    - rid: 3812102529869676551
-      type: {class: ConstantSampler, ns: UnityEngine.Perception.Randomization.Samplers,
-        asm: Unity.Perception.Runtime}
-      data:
-        value: 1
-        <minAllowed>k__BackingField: 0
-        <maxAllowed>k__BackingField: 0
-        <shouldCheckValidRange>k__BackingField: 0
-    - rid: 3812102529869676552
-      type: {class: ConstantSampler, ns: UnityEngine.Perception.Randomization.Samplers,
-        asm: Unity.Perception.Runtime}
-      data:
-        value: 1
-        <minAllowed>k__BackingField: 0
-        <maxAllowed>k__BackingField: 0
-        <shouldCheckValidRange>k__BackingField: 0
-    - rid: 3812102529869676553
-      type: {class: ConstantSampler, ns: UnityEngine.Perception.Randomization.Samplers,
-        asm: Unity.Perception.Runtime}
-      data:
-        value: 1
-        <minAllowed>k__BackingField: 0
-        <maxAllowed>k__BackingField: 0
-        <shouldCheckValidRange>k__BackingField: 0
-    - rid: 3812102529869676556
-      type: {class: NormalSampler, ns: UnityEngine.Perception.Randomization.Samplers,
-        asm: Unity.Perception.Runtime}
-      data:
-        mean: 0
-        standardDeviation: 1
-        range:
-          minimum: -9
-          maximum: 4.6
-        <minAllowed>k__BackingField: 0
-        <maxAllowed>k__BackingField: 0
-        <shouldCheckValidRange>k__BackingField: 0
-    - rid: 3812102687799115779
-      type: {class: NormalSampler, ns: UnityEngine.Perception.Randomization.Samplers,
-        asm: Unity.Perception.Runtime}
-      data:
-        mean: 0
-        standardDeviation: 1
-        range:
-          minimum: -0.08
-          maximum: 0.08
-        <minAllowed>k__BackingField: 0
-        <maxAllowed>k__BackingField: 0
-        <shouldCheckValidRange>k__BackingField: 0
---- !u!114 &6792292372768343762
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7454166816233994303}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ab1b60debc5a244f9b92341a15e6517, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+        superSamplingFactor: 8

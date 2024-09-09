@@ -30,7 +30,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &774569279547808140
 MonoBehaviour:
@@ -50,15 +50,11 @@ MonoBehaviour:
   - rid: 3190566294395027464
   - rid: 3190566294395027465
   - rid: 3190566294395027478
-  - rid: 3812102708283310081
-  - rid: 3812102530532638721
-  - rid: 3190566496612909062
-  - rid: 5580835705839681547
   configuration: {fileID: 0}
   constants:
-    randomSeed: 539662031
+    randomSeed: 782364238
     startIteration: 0
-    iterationCount: 1000
+    iterationCount: 3000
     totalIterations: 100
     instanceCount: 1
     instanceIndex: 0
@@ -119,7 +115,7 @@ MonoBehaviour:
         m_Enabled: 1
         collapsed: 1
         <enabledStateCanBeSwitchedByUser>k__BackingField: 1
-        depth: 4
+        depth: 1
         layerCount: 4
         separationDistance: 0.5
         placementArea: {x: 5, y: 5}
@@ -256,7 +252,7 @@ MonoBehaviour:
         collapsed: 1
         <enabledStateCanBeSwitchedByUser>k__BackingField: 1
         texture:
-          collapsed: 1
+          collapsed: 0
           probabilities:
           - 0.003125
           - 0.003125
@@ -914,41 +910,3 @@ MonoBehaviour:
         m_Enabled: 1
         collapsed: 1
         <enabledStateCanBeSwitchedByUser>k__BackingField: 1
-    - rid: 3190566496612909062
-      type: {class: HideByCollider, ns: , asm: Assembly-CSharp}
-      data:
-        m_Enabled: 1
-        collapsed: 0
-        <enabledStateCanBeSwitchedByUser>k__BackingField: 1
-        hideZoneCollider: {fileID: 0}
-        cobObject: {fileID: 0}
-    - rid: 3812102530532638721
-      type: {class: CameraViewActivation2, ns: , asm: Assembly-CSharp}
-      data:
-        m_Enabled: 0
-        collapsed: 0
-        <enabledStateCanBeSwitchedByUser>k__BackingField: 1
-        cobObject: {fileID: 0}
-        corns: []
-        mainCamera: {fileID: 0}
-        isInitialized: 0
-        _originalCameraPosition: {x: 0, y: 0, z: 0}
-        _originalCameraRotation: {x: 0, y: 0, z: 0, w: 0}
-        minYRange: 0
-        maxYRange: 0
-        minXRange: 1
-        maxXRange: 1
-    - rid: 3812102708283310081
-      type: {class: TimeWaiter, ns: , asm: Assembly-CSharp}
-      data:
-        m_Enabled: 1
-        collapsed: 1
-        <enabledStateCanBeSwitchedByUser>k__BackingField: 1
-    - rid: 5580835705839681547
-      type: {class: CameraViewActivation, ns: , asm: Assembly-CSharp}
-      data:
-        m_Enabled: 1
-        collapsed: 0
-        <enabledStateCanBeSwitchedByUser>k__BackingField: 1
-        cobObject: {fileID: 0}
-        mainCamera: {fileID: 0}
