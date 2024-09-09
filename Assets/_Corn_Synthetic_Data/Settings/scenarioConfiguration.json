@@ -1,0 +1,177 @@
+{
+  "constants": {
+    "startIteration": 0,
+    "iterationCount": 3000,
+    "randomSeed": 539662031
+  },
+  "randomizers": {
+    "randomizerGroups": [
+      {
+        "randomizerId": "BackgroundObjectPlacementRandomizer",
+        "metadata": {
+          "name": "",
+          "description": "",
+          "imageLink": ""
+        },
+        "state": {
+          "enabled": true,
+          "canBeSwitchedByUser": true
+        },
+        "items": {
+          "depth": {
+            "scalar": {
+              "metadata": {
+                "name": "",
+                "description": "",
+                "imageLink": ""
+              },
+              "value": {
+                "num": 4.0
+              }
+            }
+          },
+          "layerCount": {
+            "scalar": {
+              "metadata": {
+                "name": "",
+                "description": "",
+                "imageLink": ""
+              },
+              "value": {
+                "num": 4.0
+              }
+            }
+          },
+          "separationDistance": {
+            "scalar": {
+              "metadata": {
+                "name": "",
+                "description": "",
+                "imageLink": ""
+              },
+              "value": {
+                "num": 0.5
+              }
+            }
+          }
+        }
+      },
+      {
+        "randomizerId": "TextureRandomizer",
+        "metadata": {
+          "name": "",
+          "description": "",
+          "imageLink": ""
+        },
+        "state": {
+          "enabled": true,
+          "canBeSwitchedByUser": true
+        },
+        "items": {}
+      },
+      {
+        "randomizerId": "RotationRandomizer",
+        "metadata": {
+          "name": "",
+          "description": "",
+          "imageLink": ""
+        },
+        "state": {
+          "enabled": true,
+          "canBeSwitchedByUser": true
+        },
+        "items": {
+          "rotation": {
+            "param": {
+              "metadata": {
+                "name": "",
+                "description": "",
+                "imageLink": ""
+              },
+              "items": {
+                "x": {
+                  "samplerOptions": {
+                    "metadata": {
+                      "name": "",
+                      "description": "",
+                      "imageLink": ""
+                    },
+                    "uniform": {
+                      "min": 0.0,
+                      "max": 0.0
+                    }
+                  }
+                },
+                "y": {
+                  "samplerOptions": {
+                    "metadata": {
+                      "name": "",
+                      "description": "",
+                      "imageLink": ""
+                    },
+                    "uniform": {
+                      "min": 0.0,
+                      "max": 360.0
+                    }
+                  }
+                },
+                "z": {
+                  "samplerOptions": {
+                    "metadata": {
+                      "name": "",
+                      "description": "",
+                      "imageLink": ""
+                    },
+                    "uniform": {
+                      "min": 0.0,
+                      "max": 0.0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "randomizerId": "LightRandomizer",
+        "metadata": {
+          "name": "",
+          "description": "",
+          "imageLink": ""
+        },
+        "state": {
+          "enabled": true,
+          "canBeSwitchedByUser": true
+        },
+        "items": {}
+      },
+      {
+        "randomizerId": "TransformRandomizer",
+        "metadata": {
+          "name": "",
+          "description": "",
+          "imageLink": ""
+        },
+        "state": {
+          "enabled": true,
+          "canBeSwitchedByUser": true
+        },
+        "items": {}
+      },
+      {
+        "randomizerId": "RandomActivation",
+        "metadata": {
+          "name": "",
+          "description": "",
+          "imageLink": ""
+        },
+        "state": {
+          "enabled": true,
+          "canBeSwitchedByUser": true
+        },
+        "items": {}
+      }
+    ]
+  }
+}
